@@ -39,7 +39,7 @@ public class Insert extends HttpServlet {
 			pr.setInt(4, salary);
 			int insert = pr.executeUpdate();
 			if(insert > 0) {
-				response.sendRedirect("Home");
+				response.sendRedirect("Display");
 				//out.println("Inserted");
 			}
 			else {

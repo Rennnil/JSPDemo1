@@ -31,7 +31,7 @@ public class Delete extends HttpServlet {
 			pr.setInt(1, id);
 			int delete = pr.executeUpdate();
 			if(delete > 0) {
-				response.sendRedirect("Display");
+				response.sendRedirect("Display.jsp");
 				//out.println("Inserted");
 			}
 			else {

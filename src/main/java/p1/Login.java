@@ -38,7 +38,7 @@ public class Login extends HttpServlet {
 			if(rs.next()) {
 				HttpSession session=request.getSession();
 				session.setAttribute("name", user);
-				response.sendRedirect("Home");
+				response.sendRedirect("Display");
 			}
 			else {
 				out.println("Not Login");
